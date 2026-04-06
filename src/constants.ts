@@ -80,6 +80,7 @@ export const COURSES: Course[] = [
 export const BUSINESS_INFO = {
   email: "suyasheduhub6@gmail.com",
   phone: "+91 92251 35236",
+  phone2: "+91 77967 19354",
   whatsapp: "919225135236",
   gstNo: "27XXXXX0000X1Z1",
   udhyamAdhar: "UDYAM-MH-23-0381736",

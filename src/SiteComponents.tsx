@@ -649,7 +649,7 @@ const Home = () => {
                 Contact Us Today
               </Link>
               <a href={`tel:${BUSINESS_INFO.phone}`} className="btn bg-white text-primary hover:bg-slate-100 text-lg px-10">
-                Call: {BUSINESS_INFO.phone}
+                Call: {BUSINESS_INFO.phone} / {BUSINESS_INFO.phone2}
               </a>
             </div>
           </div>
@@ -870,7 +870,7 @@ const Contact = () => {
       // 4. Deploy as Web App (Anyone has access)
       // 5. Replace 'YOUR_WEB_APP_URL' with your actual deployment URL
       
-      const scriptUrl = 'https://script.google.com/macros/s/AKfycbzV0kMMVgsOACNRp8dE2BKSj-AzMZMy2t4Us9-SworHpQlh5L5DV7hwSS0-H16qh6c/exec';
+      const scriptUrl = 'https://script.google.com/macros/s/AKfycbzOlLLTkHjiDlkQx8ihKpcFwGzjToh75Ad_L2igVwU_S83utySgfG24-T4-EIl0tO4X/exec';
       
       await fetch(scriptUrl, {
         method: 'POST',
@@ -902,7 +902,7 @@ const Contact = () => {
 
             <div className="space-y-8">
               {[
-                { icon: Phone, label: 'Call Us', value: BUSINESS_INFO.phone },
+                { icon: Phone, label: 'Call Us', value: `${BUSINESS_INFO.phone} / ${BUSINESS_INFO.phone2}` },
                 { icon: Mail, label: 'Email Us', value: BUSINESS_INFO.email },
                 { icon: Clock, label: 'Working Hours', value: `${BUSINESS_INFO.workingDays}, ${BUSINESS_INFO.workingHours}` },
               ].map((item, i) => (
